@@ -1,5 +1,3 @@
-
-
 function isSafe(board, row, col,value) {
     //vertical check
   	for (let i = 0; i < board.length; i++) {
@@ -41,7 +39,7 @@ function sudokku(board,row,col){
 		nextRow = row + 1;
 		nextCol = 0;
 	}else{
-	   nextRow = 0;
+	   nextRow = row;
 	   nextCol = col+1; 
 	}
 
@@ -49,7 +47,7 @@ function sudokku(board,row,col){
 		 sudokku(board, nextRow, nextCol);
 	}else{
 	    for (var i = 1; i <=9; i++) {
-		if (isSafe(board,row,col,i)){
+		if (isSafe(board,row,col,i)==true){
 		    board[row][col]=i
 		    sudokku(board, nextRow, nextCol);
 		    board[row][col]=0
@@ -66,7 +64,6 @@ function runProgram(input){
 	}
 	var row=0,col=0
 	sudokku(board,row,col)
-
 
 }
 
