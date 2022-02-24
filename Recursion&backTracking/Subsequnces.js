@@ -10,24 +10,28 @@ function generate_subsequence(s , sub , index){
             sub.pop()
         }
 }
-function runProgram(input){
-    var input=input.split("\n")
-    var str = input[1]
+
+    var str = "abc"
 let output = []
 generate_subsequence(str ,output , i =0)
 
 
+
+//including empty space
+
+function generate_subsequence(s , sub , index){
+  if(index==s.length){
+    console.log(sub)
+    return
+}
+  generate_subsequence(s,sub+s[index],index+1)
+  generate_subsequence(s,sub,index+1)
+    
+   
 }
 
-//Boiler Plate
-process.stdin.resume();
-process.stdin.setEncoding("ascii");
-let read = "";
-process.stdin.on("data", function (input) {
-    read += input;
-});
-process.stdin.on("end", function () {
-    read = read.replace(/\n$/, "");
-    read = read.replace(/\n$/, "");
-    runProgram(read)
-});
+
+
+ var str = "abc"
+let cur = ""
+generate_subsequence(str ,cur , i =0)
