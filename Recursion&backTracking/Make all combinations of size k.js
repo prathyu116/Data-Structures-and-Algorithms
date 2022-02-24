@@ -1,3 +1,5 @@
+https://oj.masaischool.com/contest/3104/problem/03
+
 function runProgram(input) {
   input = input.trim().split(" ");
   var N = +input[0];
