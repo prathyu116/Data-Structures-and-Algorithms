@@ -1,4 +1,4 @@
-https://oj.masaischool.com/contest/3104/problem/03
+//https://oj.masaischool.com/contest/3104/problem/03
 
 function runProgram(input) {
   input = input.trim().split(" ");
