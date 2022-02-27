@@ -1,4 +1,9 @@
 
+//spaace 0(n)
+//time 0(K)+0(K)+0(N-K) = 0(n)
+
+
+
 function reverseQ(Q,K) {
   var stack = []
   //pop first k from queue put into stack
