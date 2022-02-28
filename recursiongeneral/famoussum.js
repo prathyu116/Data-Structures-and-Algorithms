@@ -1,12 +1,12 @@
-function runProgram(input){
-     input = input.trim().split("\n");
 
-let n=+input[0];
-for(let i=1;i<=n;i++){
-    let num=input[i];
-    find(num);
-    }
-}
+
+// 45 --> 9
+// 8  --> 8
+// 186 --> 6
+
+
+  find(num);
+
 
 function find(num){
    if(num.length==1){
