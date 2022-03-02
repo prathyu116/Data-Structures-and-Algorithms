@@ -30,7 +30,9 @@ function isSafe(board, row, col,value) {
 function sudokku(board,row,col){
 
 	if (row == 9) {
-	    console.log(board)
+	    for(var i=0;i<9;i++){
+	        console.log(board[i].join(" "))
+	    }
 		return 
 	}
 	var nextRow=0
@@ -54,6 +56,8 @@ function sudokku(board,row,col){
 		}
 	}
 	}
+	
+
 }
 
 function runProgram(input){
@@ -64,6 +68,7 @@ function runProgram(input){
 	}
 	var row=0,col=0
 	sudokku(board,row,col)
+
 
 }
 
