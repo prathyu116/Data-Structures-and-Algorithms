@@ -1,3 +1,7 @@
+//push all negative number in window size k into list
+//push to first elemtn of list to arr2
+
+
 function FirstNegative(N, k, arr) {
   var list = []
   var arr2 = []
