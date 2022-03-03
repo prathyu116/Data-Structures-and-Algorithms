@@ -9,6 +9,8 @@ function printKMax(N, k, arr) {
   var i = 0
   var j = 0
   while (j < arr.length) {
+        //calculation start
+
     if (list.length == 0) {
       list.push(arr[j]);
     }
