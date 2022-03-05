@@ -1,3 +1,4 @@
+
 function isSafe(board, row, col,value) {
     //vertical check
   	for (let i = 0; i < board.length; i++) {
@@ -20,15 +21,12 @@ function isSafe(board, row, col,value) {
       }
      }
      return true
-
-
 }
 
 
 
 
 function sudokku(board,row,col){
-
 	if (row == 9) {
 	    for(var i=0;i<9;i++){
 	        console.log(board[i].join(" "))
@@ -56,31 +54,21 @@ function sudokku(board,row,col){
 		}
 	}
 	}
-	
-
 }
 
-function runProgram(input){
-    input = input.trim().split('\n');
-	const board = [];
-	for (var i = 0; i < input.length; i++) {
-		board.push(input[i].trim().split(' ').map(Number));
-	}
-	var row=0,col=0
-	sudokku(board,row,col)
 
 
-}
+var board=[
+[0,4,0,0,0,0,1,7,9],
+[0,0,2,0,0,8,0,5,4],
+[0,0,6,0,0,5,0,0,8],
+[0,8,0,0,7,0,9,1,0],
+[0,5,0,0,9,0,0,3,0],
+[0,1,9,0,6,0,0,4,0],
+[3,0,0,4,0,0,7,0,0],
+[5,7,0,1,0,0,2,0,0],
+[9,2,8,0,0,0,0,6,9]
+]
 
-//Boiler Plate
-process.stdin.resume();
-process.stdin.setEncoding("ascii");
-let read = "";
-process.stdin.on("data", function (input) {
-    read += input;
-});
-process.stdin.on("end", function () {
-    read = read.replace(/\n$/, "");
-    read = read.replace(/\n$/, "");
-    runProgram(read)
-});
+var row=0,col=0
+sudokku(board,row,col)
