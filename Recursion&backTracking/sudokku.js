@@ -1,4 +1,4 @@
-
+//https://replit.com/@PrathyuPrasad/AcademicUprightAutomaticvectorization#index.js:2:4
 function isSafe(board, row, col,value) {
     //vertical check
   	for (let i = 0; i < board.length; i++) {
