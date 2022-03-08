@@ -1,54 +1,54 @@
 
-//https://replit.com/@PrathyuPrasad/UnripeDarkmagentaLightweightprocess#in.js
 // https://replit.com/@PrathyuPrasad/pivot#index.js
 //1.get pivot value
 //2.search based on pivot
 
-function Pivot(n, arr) {
-  var s = 0; var e = n - 1;
 
-  while (s < e) {
-    var mid = (s + e) / 2;
 
-    if (arr[mid] > arr[0]) {
-      s = mid + 1;
-    } else {
-      e = mid;
+ function getPivot(arr){ 
+    var s=0,e=arr.length-1;
+    while(s<e){
+          var mid=Math.floor(s+(e-s)/2)
+
+        if(arr[mid] >= arr[0]){
+            s=mid+1
+        }else{
+            e=mid
+        }
     }
-  }
-  return s;
+    return s;
 }
 
+ function binarySearch(arr,start,end,key){
+    var s=start,e=end;
+  
+    while(s<=e){
+        var  mid= Math.floor(s+(e-s)/2)
+        if(arr[mid] == key){
+            return mid
+        }
+        if(key > arr[mid]){
+            s=mid+1;
+        }else{
+            e=mid-1
+        }
+}
+    return -1;
+}
 
-function BinarySearch(arr, s, e, key) {
-
-  var start = s, end = e
-  while (start <= end) {
-    var mid = Math.floor(start + (end - start) / 2)
-
-    if (arr[mid] == key) {
-      return true
-    } else if (key > arr[mid]) {
-      start = mid + 1
-    } else if (key < arr[mid]) {
-      end = mid - 1
+var search = function(arr, target) {
+    var n=arr.length
+    var pivot = getPivot(arr)
+   
+    if( target >= arr[pivot] && target <= arr[n-1] ){
+       return binarySearch(arr,pivot,n-1,target)
+    }else{
+        return binarySearch(arr,0,pivot-1,target)
     }
-  }
 
-  return false
-}
+   
+};
 
-
-
-
-var arr = [8, 10, 17, 1, 3]
-var k = 4
-var pivot = Pivot(arr.length, arr)
-if (k >= arr[pivot] && k <= arr[arr.length - 1]) {
-  var ans = BinarySearch(arr, pivot, arr.length - 1, k)
-  console.log(ans)
-
-} else {
-  var ans = BinarySearch(arr, 0, pivot - 1, k)
-  console.log(ans)
-}
+var arr=[3 ,4, 5, 1, 2]
+var ans = search(arr,1)
+console.log(ans)
