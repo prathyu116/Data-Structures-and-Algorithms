@@ -1,4 +1,4 @@
-// https://www.youtube.com/watch?v=h6_lIwZYHQw
+// https://www.youtube.com/watch?v=h6_lIwZYHQw https://oj.masaischool.com/contest/3288/problem/02
 
 function DistributeCandies(n,arr){
 
