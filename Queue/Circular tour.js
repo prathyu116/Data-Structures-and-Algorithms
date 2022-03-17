@@ -1,5 +1,5 @@
 //https://practice.geeksforgeeks.org/problems/circular-tour/1
-
+//babbr 1:06:01
 N = 4
 var Petrol = [4, 6, 7, 4]
 var Distance = [6, 5, 3, 5]
