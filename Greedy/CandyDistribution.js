@@ -1,4 +1,5 @@
 // https://www.youtube.com/watch?v=h6_lIwZYHQw https://oj.masaischool.com/contest/3288/problem/02
+//childeren with hight rating get more candies than neighbours
 
 function DistributeCandies(n,arr){
 
