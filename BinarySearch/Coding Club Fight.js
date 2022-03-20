@@ -25,6 +25,8 @@ o/p
 
 
 tc==nlogn+logn+n  -->nlogn
+
+//hint:- find upperindex
 */
 
 
