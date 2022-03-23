@@ -1,6 +1,7 @@
 
 https://replit.com/@PrathyuPrasad/ElementaryImportantTexts#index.js
 
+
 const LinkedListNode = class {
     constructor(nodeData) {
         this.data = nodeData;
@@ -10,21 +11,26 @@ const LinkedListNode = class {
 
 // Complete the function below
 
-function insertNodeAtTail(head, data) {
+function insertNodeAtHead(head, data) {
     let node = new LinkedListNode(data)
     let temp = head
-    if(temp===null){
+    if(temp==null){
         return node
+    }else{
+      node.next=temp
+      head=node
     }
-    while(temp.next !== null){
-        temp=temp.next
-    }
-    temp.next=node
     return head
+    
+    
 }
+
+
 
 -----------------------------------------------------------
   
+
+
 class Node {
   constructor(item){
     this.data = item
@@ -36,6 +42,7 @@ class Linkedlist {
     this.head = null
     this.size = 0
   }
+
   add(item){
     var node = new Node(item) //1.create node
     if(this.head == null){    // 
@@ -49,7 +56,16 @@ class Linkedlist {
     }
     this.size++ //node nte count edkkan
   }
-
+  addAtBegining(item){
+    var node = new Node(item)
+    if(this.head == null){    // 
+      this.head=node
+    }else{
+      node.next=this.head
+      this.head=node
+    }
+     this.size++
+  }
   printList(){
     var cur = this.head
     var index = 0
@@ -64,4 +80,5 @@ var list = new Linkedlist()
 list.add(2)
 list.add(3)
 list.add(4)
+list.addAtBegining(1)
 list.printList() 
