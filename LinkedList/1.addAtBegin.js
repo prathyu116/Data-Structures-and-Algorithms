@@ -31,6 +31,9 @@ function insertNodeAtHead(head, data) {
   
 
 
+
+
+
 class Node {
   constructor(item){
     this.data = item
@@ -43,19 +46,6 @@ class Linkedlist {
     this.size = 0
   }
 
-  add(item){
-    var node = new Node(item) //1.create node
-    if(this.head == null){    // 
-      this.head=node
-    }else{
-      var cur = this.head
-      while(cur.next != null){
-        cur=cur.next
-      }
-       cur.next=node
-    }
-    this.size++ //node nte count edkkan
-  }
   addAtBegining(item){
     var node = new Node(item)
     if(this.head == null){    // 
@@ -77,8 +67,7 @@ class Linkedlist {
 }
 
 var list = new Linkedlist()
-list.add(2)
-list.add(3)
-list.add(4)
+
 list.addAtBegining(1)
+list.addAtBegining(2)
 list.printList() 
