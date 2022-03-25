@@ -1,4 +1,8 @@
 //https://replit.com/@PrathyuPrasad/ElementaryImportantTexts#rev.js
+/*
+=>take 3 pointer prev,curr,next(n)
+=>change the node
+*/
 
 class Node {
   constructor(item) {
