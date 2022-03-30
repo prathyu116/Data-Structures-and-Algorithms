@@ -22,6 +22,44 @@ var middleNode = function(head) {
 
 --------------------------------------------
 
+delete mdidle
+var deleteMiddle = function(head) {
+    if (!head || !head.next) return null;
+    
+    let slow = head;
+    let fast = head;
+    let lastPointer;
+    let len = 0;
+    
+    while (fast.next) {
+        if (len % 2 === 0) {
+            lastPointer = slow;
+            slow = slow.next;
+        }
+        fast = fast.next;
+        len++;
+    }
+    
+    lastPointer.next = slow.next;
+    return head;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------
 
 class Node {
   constructor(item) {
