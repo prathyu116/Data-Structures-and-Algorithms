@@ -15,5 +15,5 @@ function deleteNode(node){
     
     //
     node.data = node.next.data
-    node.next = node.next.next
+    node.next = node.next.next (or null )
 }
