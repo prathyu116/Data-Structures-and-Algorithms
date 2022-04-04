@@ -30,3 +30,12 @@ console.log(res)
 
 // output =3
 //tc==nlogn+n  = nlogn
+/*
+1 2 6 8
+5 9 7 10
+oru manikk vaum 5 manikkea povuoo...... platform-1
+2-9 ath randamathea platformil varum platform 2
+6-7 ath onnamathea platformil varum platform 1
+8-10 ath onnamathea platformil varum platform 1
+
+*/
