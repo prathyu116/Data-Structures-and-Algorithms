@@ -11,14 +11,13 @@
 function generate_subsequence(s , sub , index,k){
   if(index==s.length){
     
-    if(sub==k){
-        ans=true
-    }
-    return
+    return sub==k
     
 }
-  generate_subsequence(s,sub+s[index],index+1,k)
-  generate_subsequence(s,sub,index+1,k)
+  var x =generate_subsequence(s,sub+s[index],index+1,k)
+  if(x==true) return true
+  var y=generate_subsequence(s,sub,index+1,k)
+  if(y==true) return true
     
    
 }
