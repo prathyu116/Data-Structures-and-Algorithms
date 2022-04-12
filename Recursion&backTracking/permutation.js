@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=4FdPoW4Qzb4&list=PLrClazTqVpJkZSFk6mRw5e0BOtOG4-7El&index=4
 function GeneratePermutations(arr,curr){
     if(curr==arr.length){
      console.log(arr)
