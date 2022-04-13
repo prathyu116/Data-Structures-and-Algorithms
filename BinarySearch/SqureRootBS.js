@@ -20,6 +20,7 @@ function SqureRoot(n){
                  e=mid-1;
             }
         }
-   console.log(ans)
+   console.log("outside",ans)
    return 
 }
+SqureRoot(16)
