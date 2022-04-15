@@ -7,3 +7,11 @@ for(let i = 0; i < arr.length-1; i++){
         console.log(arr[i] + 1)
     }
 }
+
+
+for(i=0;i<N;i++){
+Let arrSum+=arr[i]
+}
+Let sum=N*(N+1)/2
+Let ans=sum-arrSum
+console.log(ans)
