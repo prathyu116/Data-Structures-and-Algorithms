@@ -34,3 +34,49 @@ console.log(bag)
 
 //1 5 9 13 14 15 16 12 8 4 3 2 6 10 11 7       https://replit.com/@PrathyuPrasad/spiral#k.js
 //Time Complexity: O(N), where N is the total number of elements in the input matrix. We add every element in the matrix to our final answer.
+
+
+
+//for rectangular matrix
+ var top=0,bottom=N-1,left=0,rigth=M-1,count=0;
+
+
+var bag=""
+while(count<N*M){
+  for(var i=top;i<=bottom && count<N*M ;i++){
+  bag=bag+arr[i][left]+" "
+  count++
+}
+left++
+for(var i=left;i<=rigth && count<N*M;i++){
+  bag=bag+arr[bottom][i]+" "
+   count++
+}
+bottom--
+for(var i=bottom;i>=top && count<N*M;i--){
+  bag=bag+arr[i][rigth]+" "
+   count++
+}
+rigth--
+for(var i=rigth;i>=left && count<N*M;i--){
+  bag=bag+arr[top][i]+" "
+   count++
+}
+top++
+}
+console.log(bag)
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
