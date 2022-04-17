@@ -6,6 +6,7 @@ function checkEqual(count1,count2){
   }
   return 1;
 }
+
 var checkInclusion = function(s1, s2) {
    const count1 = new Array(26).fill(0);
   for (let i = 0; i < s1.length; i++) {
@@ -20,7 +21,7 @@ var checkInclusion = function(s1, s2) {
     i++
   }
  if(checkEqual(count1,count2)) return 1
-
+ //if it is not equal go to the next window size
  while(i<s2.length){
    count2[s2.charCodeAt(i) - 97]++;
 
