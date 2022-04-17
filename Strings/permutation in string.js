@@ -1,4 +1,6 @@
-/*https://leetcode.com/problems/permutation-in-string/*/
+/*https://leetcode.com/problems/permutation-in-string/
+TC==O9m)+O(n)
+*/
 
 function checkEqual(count1,count2){
   for(var i=0;i<26;i++){
@@ -32,3 +34,5 @@ var checkInclusion = function(s1, s2) {
  }
  return 0;
 };
+
+
