@@ -11,11 +11,13 @@ var row=mat.length,col=mat[0].length
 
 function springboard(mat,i,j){
   if(i<0 || i>=row || j<0 || j>=col) return 0
+  if(dptable[i][j] !==0 ) return dptable[i][j]
   var x=springboard(mat,i+1,j-1)
   var y=springboard(mat,i+1,j)
   var z=springboard(mat,i+1,j+1)
   var xy=Math.max(x,y)
   var res=Math.max(xy,z)
+  dptable[i][j]=res+mat[i][j]
   return res+mat[i][j]
 }
 
