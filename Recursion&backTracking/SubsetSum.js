@@ -1,13 +1,13 @@
 }
-function generate_subsequence(s , sub , index,k){
+function generate_subsequence(s , sum=0 , index,k){
   if(index==s.length){
 
-    return sub==k
+    return sum==k
     
 }
-  var x =generate_subsequence(s,sub+s[index],index+1,k)
+  var x =generate_subsequence(s,sum+s[index],index+1,k)
   if(x==true) return true
-  var y=generate_subsequence(s,sub,index+1,k)
+  var y=generate_subsequence(s,sum,index+1,k)
   return y
    
 }
