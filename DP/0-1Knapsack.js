@@ -1,6 +1,6 @@
 /*
 Recursion code
-Time Complexity: O(2n)
+Time Complexity: O(2^n)
 */
 
 	function knapSack(W, wt, val, n)
