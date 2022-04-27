@@ -1,5 +1,5 @@
 /*
-https://takeuforward.org/data-structure/preorder-traversal-of-binary-tree/
+https://takeuforward.org/data-structure/inorder-traversal-of-binary-tree/
 Algorithm Preorder(tree)
    1. Visit the root.
    2. Traverse the left subtree, i.e., call Preorder(left-subtree)
