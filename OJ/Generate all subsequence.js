@@ -1,19 +1,17 @@
-function generate_subsequence(s , sub , index){
+var subarraySum = function(nums) {
     
-        if(sub.length != ""){
-            console.log(sub.join(""))
+    for(var start = 0; start<nums.length;start++){
+        let bag = "";
+        for(var end = start; end < nums.length; end++){
+            bag+=nums[end];
+          console.log(bag)
         }
-        for(let i = index ; i < s.length ; i++){
-            sub.push(s[i]);
-            generate_subsequence(s , sub , i + 1)
-            sub.pop()
-        }
-}
-function runProgram(input){
-    var input=input.split("\n")
-    var str = input[1]
-let output = []
-generate_subsequence(str ,output , i =0)
+            
 
-
-}
+           
+    }
+    // return count;
+    
+};
+var arr=[1,2,3]
+subarraySum(arr)
