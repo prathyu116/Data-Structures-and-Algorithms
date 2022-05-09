@@ -31,7 +31,6 @@ var levelOrder = function(root) {
     while(queue.length ){
          var size = queue.length
          ans.push(queue.map(node=>node.val));
-         var level=[]
          for(var i=0;i<size;i++){
              node=queue.shift()
           if(node.left)  queue.push(node.left);  
