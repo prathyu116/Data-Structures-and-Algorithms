@@ -2,7 +2,8 @@
 
 
 https://takeuforward.org/data-structure/preorder-traversal-of-binary-tree/
-
+TC o(n) n is number of nodes
+SC==o(n)
 */
 var preorderTraversal = function(root) {
     let output = [];
