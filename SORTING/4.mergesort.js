@@ -47,16 +47,28 @@ function merge(arr,low,mid,high) {
 }
 
 
-**Time Complexity:-**
+// **Time Complexity:-**
 
-T(n) : represents time taken to sort n numbers.
+// T(n) : represents time taken to sort n numbers.
 
-T(n) =  2T(n/2) + n        if n>1
+// T(n) =  2T(n/2) + n        if n>1
 
-      1                         if n==1
+//       1                         if n==1
 
-if you solve above equation by using back substitution we will get **O(nlogn)** 
+// if you solve above equation by using back substitution we will get **O(nlogn)** 
 
-**Space Complexity:-**
+// **Space Complexity:-**
 
-Merge sort uses extra array of size n. So the Space Complexity is **O(n)**
+// Merge sort uses extra array of size n. So the Space Complexity is **O(n)**
+  
+//   **Some extra points about Merge sort:-**
+
+// - Merge sort is an example of **Stable sorting algorithm**
+    
+//     That is, a sorting algorithm is stable if whenever there are two records R and S with the same key and with R appearing before S in the original list,
+//       R will appear before S in the sorted list.
+    
+// - Merge sort is **NOT** a  **in place sorting algorithm**
+    
+//     An in-place algorithm is an algorithm that does not need an extra space and produces an output in the same memory that contains the data by transforming 
+//     the input ‘in-place’. However, a small constant extra space used for variables is allowed.
