@@ -14,5 +14,5 @@ var twoSum = function(nums, target) {
         }
     }
 };
-
+https://oj.masaischool.com/contest/2749/problem/01
 //search in object time complexity O(1)
