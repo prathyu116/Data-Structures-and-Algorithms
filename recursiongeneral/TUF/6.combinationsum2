@@ -1,0 +1,55 @@
+/*
+https://takeuforward.org/data-structure/combination-sum-ii-find-all-unique-combinations/
+https://www.youtube.com/watch?v=Atr_z-JrMSI&list=PLrClazTqVpJkZSFk6mRw5e0BOtOG4-7El&index=7&t=1s
+here we can pic an elemnt more than one timee
+[1,1,1,2,2]  target =4
+ans= 1,1,2  
+     2,2
+
+
+
+
+brite force
+var global = [[],[1,2],[1,2],[1,2,2],[2],[2,2]]
+
+const hash={}
+for(let el of global){
+  if(hash[el]) continue
+  else hash[el]=el
+}
+console.log(Object.values(hash))
+
+full combination generate cheythitt unique kand pidikkam
+
+*/
+
+/**
+ * @param {number[]} candidates
+ * @param {number} target
+ * @return {number[][]}
+ */
+var combinationSum2 = function(candidates, target) {
+    //global result
+    const global = []
+    candidates.sort((a,b)=>a-b)
+   const ANS = (index,arr,T,list)=>{
+       if(T<0) return
+       if(T===0){
+           global.push(list.slice())
+           return
+       }
+       for(var j=index;j<arr.length;j++){
+           if(index !== j && arr[j]===arr[j-1]) continue
+           list.push(arr[j])
+           ANS(j+1,arr,T-arr[j],list)
+           list.pop()
+       }
+       
+    }
+   ANS(0,candidates,target,[])
+    return global
+    
+    
+};
+
+TC  exponential  
