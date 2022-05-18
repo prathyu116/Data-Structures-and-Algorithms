@@ -9,3 +9,4 @@ for (let i = 0; i < arr.length; i += chunkSize) {
 }
 console.log(2*ans[0] + ans[1] + 2*ans[2] + ans[3] )
 }
+https://oj.masaischool.com/contest/3924/problem/14
