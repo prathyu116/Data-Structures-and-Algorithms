@@ -22,3 +22,26 @@ function GeneratePermutations(arr,curr){
  let curr=0
  
   GeneratePermutations(arr,curr)
+------------------------------------------TUF-----------------------------
+    //https://takeuforward.org/data-structure/print-all-permutations-of-a-string-array/
+    function GeneratePermutations(arr,list,freq){
+    if(list.length==arr.length){
+     console.log(list)
+        return
+    }
+    for(var i=0;i<arr.length;i++){
+      if(freq[i]===0){
+        freq[i]=1
+        list.push(arr[i])
+        GeneratePermutations(arr,list,freq)
+         freq[i]=0
+        list.pop()
+      }  
+    }
+ }
+ 
+ let arr=[1,2,3]
+let freq= new Array(arr.length).fill(0)
+ let list=[]
+ 
+  GeneratePermutations(arr,list,freq)
