@@ -1,4 +1,5 @@
 //https://www.youtube.com/watch?v=4FdPoW4Qzb4&list=PLrClazTqVpJkZSFk6mRw5e0BOtOG4-7El&index=4
+https://takeuforward.org/data-structure/print-all-permutations-of-a-string-array/
 function GeneratePermutations(arr,curr){
     if(curr==arr.length){
      console.log(arr)
@@ -11,7 +12,7 @@ function GeneratePermutations(arr,curr){
          arr[curr] = temp
         GeneratePermutations(arr,curr+1)
          temp = arr[i];
-         arr[i] = arr[curr]
+         arr[i] = arr[curr]  //backtrack
          arr[curr] = temp
  
         
