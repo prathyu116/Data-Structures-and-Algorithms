@@ -56,3 +56,30 @@ var rotate = function(matrix) {
         }
          matrix[i]  =  matrix[i].reverse()
     }
+
+    
+    
+    
+    
+    
+    
+    
+    --------------------------rotate by 180deg------------------------------------
+    var items = [];
+
+items.push([1,2,3]);
+items.push([4,5,6]);
+items.push([7,8,9]);
+for(var i=items.length-1;i>=0;i--){
+  var bag=""
+
+   for(var j=items.length-1;j>=0;j--){
+     bag=bag+(items[i][j])+" "
+   }
+   
+console.log(bag.split("").join(""))
+}
+    
+    inplace
+    first find transpose+reverse colm+reverserow
+
