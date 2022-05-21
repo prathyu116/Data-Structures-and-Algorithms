@@ -21,3 +21,22 @@ function nTraversal(matrix) {
     }
   console.log(bag)
 }
+
+
+
+----------------reverseNtraversal
+https://oj.masaischool.com/contest/2814/problem/05
+function ReverseNTraversal(N,matrix){
+    var bag=""
+    for(var i=0;i<N;i++){
+        bag=bag+matrix[i][0]+" "
+    }
+    for(var i=N-2,j=1;i>=0;i--){
+        bag=bag+(matrix[i][j])+" "
+        j++;
+    }
+     for(var i=1;i<N;i++){
+        bag=bag+matrix[i][N-1]+" "
+    }
+    console.log(bag)
+}
