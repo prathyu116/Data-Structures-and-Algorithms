@@ -21,3 +21,22 @@ var canCompleteCircuit = function(gas, cost) {
     }
     return total >= 0 ? start : -1;
 };
+---------------------avoiding use cheyth nammkukk optimise cheyyam-----------------
+          var avoiding = 0
+  var balance = 0
+  var start = 0
+  
+  for (var i = 0; i < N; i++) {
+    balance = balance + (Petrol[i] - Distance[i])
+    if (balance < 0) {
+      avoiding = avoiding + balance
+      start = i + 1
+      balance = 0
+    }
+  }
+  if (avoiding + balance >= 0) {
+    return start
+  } else {
+    return -1
+  }
+}
