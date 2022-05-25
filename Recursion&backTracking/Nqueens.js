@@ -1,6 +1,7 @@
+https://takeuforward.org/data-structure/n-queen-problem-return-all-distinct-solutions-to-the-n-queens-puzzle/
 //isSafe function start
 function isSafe(bord, row, col) {
-    //verticalTop check
+    // checking thazhotttt
 	for (let i = 0; i <row; i++) {
 		if (bord[i][col] == 1) return false;
 	}
@@ -26,15 +27,15 @@ function isSafe(bord, row, col) {
 var count=0
 function NQueensVariant(bord,row){
     if (row == bord.length) {
+        // console.log(bord)
 		count++;
 		return;
 	}
-	for (let i = 0; i < bord.length; i++) {
-	
-		if (isSafe(bord, row, i)) {
-            bord[row][i]=1
+	for (let col = 0; col < bord.length; col++) {
+		if (isSafe(bord, row, col)) {
+            bord[row][col]=1
 			NQueensVariant(bord, row + 1);
-		    bord[row][i]=0
+		    bord[row][col]=0 //backtrackinf
 
 		}
 	}
@@ -58,17 +59,8 @@ function runProgram(input){
     
 }
 
+Time Complexity: Exponential in nature, since we are trying out all ways. To be precise it goes as O
 
+(N! * N) nearly.
 
-//Boiler Plate
-process.stdin.resume();
-process.stdin.setEncoding("ascii");
-let read = "";
-process.stdin.on("data", function (input) {
-    read += input;
-});
-process.stdin.on("end", function () {
-    read = read.replace(/\n$/, "");
-    read = read.replace(/\n$/, "");
-    runProgram(read)
-});
+Space Complexity: O(N^2)
