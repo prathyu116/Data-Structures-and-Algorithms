@@ -14,9 +14,12 @@ The repo contains some of the most important questions from the following topics
 - Sorting Algorithms
 - Strings
 - Stacks
+- linkedlist
 - Queues
 - Recursion
 - Backtracking
 - Greedy Algorithms
 - Binary Search
 - Dynamic Programming
+- Grapgh
+- Tree
