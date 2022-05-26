@@ -1,5 +1,7 @@
 //https://takeuforward.org/data-structure/nth-root-of-a-number-using-binary-search/
 //https://replit.com/@PrathyuPrasad/InternalSuspiciousPrinters#index.js
+The nth root of a number M is defined as a number X when raised to the power N equals M.
+
 
 
 function multiply(number, n) {
