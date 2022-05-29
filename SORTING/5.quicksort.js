@@ -5,6 +5,8 @@ how to find the correct place for that pivot element ?  right side of pivot elem
 when we found the correct place for pivot elemnt ..left side full greater right side full small or equal ...so that we got 2 part
 ->then we only focus on left part,,,chose a pivot
 
+start is lessthan equal to pivot anenkil start++
+end is greaterthan to pivot end--
 */
 
 
@@ -40,6 +42,10 @@ function Partition(arr,low,high){
   swap(pivot,j);
   return j
 }
+TIME AND SPACE COMPLEXITY
+*for the best and average case time complexity is nlogn.
+The worst case occurs when the partition process always picks greatest or smallest element as pivot. If we consider above partition strategy where last element is always picked as pivot, the worst case would occur when the array is already sorted in increasing or decreasing order. The time complexity become O(n^2)
+To avoid this we use randomizedQuick sort technique which is randomly select pivot element
 
 
 
