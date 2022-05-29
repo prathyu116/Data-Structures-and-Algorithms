@@ -32,3 +32,41 @@ Time Complexity → $O(N^2)$
 Space Complexity → $O(1)$
 
 best casil array sorted aanu so O(N)
+
+
+
+
+
+
+function RecursiveBubblesort(arr,n){
+    var temp
+     if (n == 1 || n==0) {
+         return 
+     } 
+        
+    
+      for (var i = 0; i < n - 1; i++){
+        if (arr[i] > arr[i + 1])
+        {
+             temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+        }
+                  
+  
+      }
+       RecursiveBubblesort(arr,n-1);
+
+
+
+
+}
+
+TIME AND SPACE COMPLEXITY
+Time complexity
+        BESTCASE- O(n)
+        AVERAGE CASE-O(n^2)
+        WORST CASE - O(n^2)
+Space Complexity
+        O(1)
+
