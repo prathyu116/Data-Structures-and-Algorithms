@@ -21,27 +21,19 @@ var middleNode = function(head) {
 };
 
 --------------------------------------------
-
+[1,2,3,4,5]  => [3,4,5]//midle elemnt deleted
 delete mdidle
 var deleteMiddle = function(head) {
-    if (!head || !head.next) return null;
-    
-    let slow = head;
-    let fast = head;
-    let lastPointer;
-    let len = 0;
-    
-    while (fast.next) {
-        if (len % 2 === 0) {
-            lastPointer = slow;
-            slow = slow.next;
-        }
-        fast = fast.next;
-        len++;
+     if(head == null){
+        return null
     }
-    
-    lastPointer.next = slow.next;
-    return head;
+    var fast = head
+    var slow = head
+    while(fast !== null && fast.next!==null ){
+        slow=slow.next
+        fast=fast.next.next
+    }
+    return slow.data
 };
 
 
