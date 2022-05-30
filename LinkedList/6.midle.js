@@ -10,13 +10,13 @@ var middleNode = function(head) {
     if(head == null){
         return null
     }
-    var fast = head
+    var fast = head      //2 pointer aproch ....when fast pointer at end slowpointer at middle
     var slow = head
     while(fast !== null && fast.next!==null ){
         slow=slow.next
         fast=fast.next.next
     }
-    return slow.data
+    return slow.data          
     
 };
 
