@@ -20,6 +20,7 @@ var middleNode = function(head) {
     
 };
 
+by brute forcce we found the length of linked list then middle ....so time complexity 0(n)+o(n/2)
 --------------------------------------------
 [1,2,3,4,5]  => [3,4,5]//midle elemnt deleted
 delete mdidle
