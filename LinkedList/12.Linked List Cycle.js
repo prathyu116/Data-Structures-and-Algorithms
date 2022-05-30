@@ -13,7 +13,7 @@ https://leetcode.com/problems/linked-list-cycle-ii/
  * 4. From that position move one of the two pointer one by one. Assign the next pointer to head and move that pointer from head one by one as well.
  * 5. The point where they meet now is where the cycle starts.
  */
-
+Brute forse is head.next value oru arraylekk push cheyyuvaa..enitt duplicate elemnt ondonn nokknm
 
 */
 
