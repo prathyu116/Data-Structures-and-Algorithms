@@ -18,3 +18,15 @@ const isAnagram = function(s, t) {
   
   return true;
 };
+73
+
+
+15
+How could I convert a letter to its corresponding number in JavaScript?
+
+For example:
+
+a = 0
+b = 1
+c = 2
+d = 3
