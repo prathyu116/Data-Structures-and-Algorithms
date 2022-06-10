@@ -1,4 +1,5 @@
 https://www.codingninjas.com/codestudio/problems/allocate-books_1090540?leftPanelTab=0
+https://takeuforward.org/data-structure/allocate-minimum-number-of-pages/
 /*
 Input : pages[] = {12, 34, 67, 90}
         m = 2
