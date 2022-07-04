@@ -1,0 +1,6 @@
+var arr = [1,2,3,4]
+var arr2 = [11,12,10]
+
+
+var ans = arr.some((val)=>arr2.includes(val))
+console.log(ans)
