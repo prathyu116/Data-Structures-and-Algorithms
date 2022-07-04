@@ -74,6 +74,36 @@ console.log(bag)
 
 
 
+function spirallyTraversingAMatrix(N, items) {
+  //write code here
+  var startingRow = 0, endingRow = N - 1, startingCol = 0, endingCol = N - 1, count = 0;
+
+  var bag = ""
+  while (count < N * N) {
+    for (var i = startingCol; i <= endingCol; i++) {
+      bag = bag + items[startingRow][i] + " "
+      count++
+    }
+    startingRow++
+    
+    for (var i = startingRow; i <= endingRow; i++) {
+      bag = bag + items[i][endingCol] + " "
+      count++
+    }
+    endingCol--
+    for (var i = endingCol; i >= startingCol; i--) {
+      bag = bag + items[endingRow][i] + " "
+      count++
+    }
+    endingRow--
+    for (var i = endingRow; i >= startingRow; i--) {
+      bag = bag + items[i][startingCol] + " "
+      count++
+    }
+    startingCol++
+  }
+  console.log(bag)
+}
 
 
 
