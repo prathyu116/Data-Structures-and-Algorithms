@@ -18,6 +18,23 @@ function validParanthis(str){
 }
 var ans = validParanthis("()")
 console.log(ans)
+-----------------------------simmple-------------------
+  function isBalanced(s) {
+    let balance = 0;
+    for (let char of s) {
+        if (char === '(') {
+            balance++;
+        } else if (char === ')') {
+            balance--;
+        }
+        // If balance goes negative, it's unbalanced immediately
+        if (balance < 0) return false;
+    }
+    console.log("poooi")
+    return balance === 0;
+}
+const k = isBalanced("())")
+console.log(k)
 ------------------------------------------------------------------------------------------
 
 //https://oj.masaischool.com/contest/2835/problem/02
