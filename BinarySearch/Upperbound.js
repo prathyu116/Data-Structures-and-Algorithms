@@ -1,24 +1,27 @@
 //TC O(log n)
 //UPPERBOUND or CEIL----> arr[i] > key(Just >than key )
 //upper bound means the smallest index such that ..that number >  target
-function upperBound(arr,key) {
-  var start = 0, end = arr.length - 1, UpperIndex = -1
-  while (start <= end) {
-    var mid = Math.floor(start + (end - start) / 2)
 
-    if (arr[mid] <= key) {
-      
-      start = mid + 1
-    } else {
-      UpperIndex=mid
-      end=mid-1
-    } 
-  }
+function upperBound(arr, x, n) {
+    let low = 0, high = n - 1;
+    let ans = n;
 
-  return UpperIndex
+    while (low <= high) {
+        let mid = Math.floor((low + high) / 2);
+        // maybe an answer
+        if (arr[mid] > x) {
+            ans = mid;
+            //look for smaller index on the left
+            high = mid - 1;
+        }
+        else {
+            low = mid + 1; // look on the right
+        }
+    }
+    return ans;
 }
-var key = 3
-var arr = [0 ,2 ,4 ,4, 5, 5 ,7 ,7 ,9 ,10]
 
-var ans = upperBound(arr,key)
-console.log(ans)
+let arr = [3, 5, 8, 9, 15, 19];
+let n = 6, x = 9;
+let ind = upperBound(arr, x, n);
+console.log("The upper bound is the index:", ind);
