@@ -1,4 +1,4 @@
-function UpperBound(arr,key){
+function LowerBound(arr,key){
     var start=0,end=arr.length-1,first=-1
     while(start<=end){
         var mid=Math.floor(start+(end-start)/2)
@@ -15,3 +15,4 @@ function UpperBound(arr,key){
 
     return first
 }
+//lower bound means the smallest index such that ..that number >= target
