@@ -24,3 +24,15 @@ let ind = lowerBound(arr, n, x);
 console.log("The lower bound is the index:", ind);
 
 //lower bound means the smallest index such that ..that number >= target
+
+
+//brute force approch
+function lowerBound(arr, n, x) {
+    for (let i = 0; i < n; i++) {
+        if (arr[i] >= x) {
+            // lower bound found:
+            return i;
+        }
+    }
+    return n;
+}
