@@ -1,6 +1,6 @@
 //TC O(log n)
 //UPPERBOUND or CEIL----> arr[i] > key(Just >than key )
-//upper bound means the smallest index such that ..that number <= target
+//upper bound means the smallest index such that ..that number >  target
 function upperBound(arr,key) {
   var start = 0, end = arr.length - 1, UpperIndex = -1
   while (start <= end) {
