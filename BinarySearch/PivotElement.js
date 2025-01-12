@@ -19,4 +19,4 @@ function Pivot(n, arr) {
 
 var arr = [8, 10, 17, 1, 3]
 var ans = Pivot(arr.length, arr)
-console.log(ans)
+console.log(ans)//3
