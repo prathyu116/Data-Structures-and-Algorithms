@@ -1,3 +1,39 @@
+function isValid(s) {
+    const stack = [];
+    for (let char of s) {
+        if (char === '(' || char === '[' || char === '{') {
+            stack.push(char);
+        } else {
+            if (stack.length === 0) return false;
+            const top = stack.pop();
+            if (
+                (char === ')' && top === '(') ||
+                (char === ']' && top === '[') ||
+                (char === '}' && top === '{')
+            ) {
+                continue;
+            } else {
+                return false;
+            }
+        }
+    }
+    return stack.length === 0;
+}
+
+// Example usage
+const s = "()[{}()]";
+if (isValid(s)) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+---------------------
+
+
+
+
+
+
 function validParanthis(str){
   const stack=[]
   let i=0
